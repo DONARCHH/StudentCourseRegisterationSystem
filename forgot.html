@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Forgot Password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .forgot-container {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .forgot-container h2 {
+            color: #1c2b4a;
+            margin-bottom: 20px;
+        }
+
+        .forgot-container p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .forgot-container input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .forgot-container button {
+            width: 100%;
+            padding: 12px;
+            background: #1c2b4a;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .forgot-container button:hover {
+            background: #0f1a33;
+        }
+
+        .forgot-container .back-login {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .forgot-container .back-login a {
+            color: #1c2b4a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .forgot-container .back-login a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .forgot-container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-container">
+        <h2>Forgot Password</h2>
+        <p>Enter your registered email address to reset your password.</p>
+        <form action="reset_password.php" method="POST">
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <button type="submit">Send Reset Link</button>
+        </form>
+        <div class="back-login">
+            <p>Remembered your password? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
